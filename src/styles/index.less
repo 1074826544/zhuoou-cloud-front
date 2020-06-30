@@ -1,0 +1,37 @@
+.theme(@headerColor:#9a66e4,@backcolor: red,@fcolor: rgb(39, 35, 35),@primaryColor: #2aa5f9,@btnColor: #9a66e4)
+{
+  @import '~iview/src/styles/index.less';
+  // Here are the variables to cover, such as:
+  @primary-color:@btnColor;
+  .main-lo{
+    flex-direction: row!important;
+  }
+  .logo-con,.header-con{
+  	background: @headerColor!important;
+  }
+  .header {
+	color: @fcolor;
+	background: @backcolor;
+  }
+  .ivu-layout-content{
+    color: @fcolor;
+  }
+  .itemActive{
+	color: backcolor !important;
+	box-shadow:0px 0px l5px 7px rgb(121, 170, 220) inset;
+  }
+  .infoList{
+    background: @primaryColor;
+	color: @fcolor !important;
+  }
+  .ivu-btn-primary{
+    background-color: @btnColor;
+	border-color: @btnColor;
+  }
+  .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active, .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active:hover {
+    background: @btnColor !important;
+  }
+  .ivu-tag-primary.ivu-tag-dot .ivu-tag-dot-inner {
+    background: @btnColor !important;
+  }
+}
